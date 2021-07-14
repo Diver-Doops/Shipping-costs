@@ -1,0 +1,33 @@
+weight = 4.8
+#----------------------------------------
+# Ground shipping calculations
+if weight <= 2:
+  grnd_ship = weight * 1.5 + 20
+elif weight <= 6:
+ grnd_ship = weight * 3 + 20
+elif weight <=10:
+  grnd_ship = weight * 4 + 20
+elif weight > 10:
+  grnd_ship = weight * 4.75 + 20
+else:
+  print("lorry says no")
+
+print("Ground shipping fee:\n" , grnd_ship)
+#---------------------------------------
+prem_grnd_ship = 125
+print("Premium ground shipping:\n" ,prem_grnd_ship)
+#---------------------------------------
+#Drone shipping calculations
+if weight <= 2:
+  drone_ship = weight * 4.5
+elif weight <= 6:
+ drone_ship = weight * 9
+elif weight <=10:
+ drone_ship = weight * 12
+elif weight > 10:
+ drone_ship = weight * 14.25
+else:
+  print("drone says no")
+
+print("Drone shipping fee:\n" , drone_ship)
+#---------------------------------------
